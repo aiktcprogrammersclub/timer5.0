@@ -172,7 +172,7 @@ Primary use:
   display: block;
   position: fixed;
   z-index: 0;
-  opacity: 0.5;
+  opacity: 1;
   width: 100%;
   height: 100%;
   top: 0;
@@ -187,6 +187,18 @@ Primary use:
   top: 0;
   left: 0;
 }
+.m-b-20
+.seconds,.m-b-20 {
+  /*background-image: url('Top_Rect.png');*/
+  animation: beat 0.5s infinite alternate;
+  transform-origin: center;
+}
+
+/* Heart beat animation */
+@keyframes beat{
+  to { transform: scale(1.1); }
+}
+
 
 
 /*==================================================================
@@ -313,7 +325,7 @@ Primary use:
 /*//////////////////////////////////////////////////////////////////
 [ Border ]*/
 .bor1 {
-  border: 1px solid rgba(255,255,255,0.3);
+  border: 4px solid rgba(0,255,0,0.3);
   border-radius: 50%;
 }
 
